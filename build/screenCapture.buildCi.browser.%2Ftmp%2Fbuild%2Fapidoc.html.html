@@ -54,12 +54,67 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.gulp-cdnizer">module gulp-cdnizer</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.gulp-cdnizer.gulp-cdnizer">
+            function <span class="apidocSignatureSpan"></span>gulp-cdnizer
+            <span class="apidocSignatureSpan">(opts)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.gulp-cdnizer" id="apidoc.module.gulp-cdnizer">module gulp-cdnizer</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.gulp-cdnizer.gulp-cdnizer" id="apidoc.element.gulp-cdnizer.gulp-cdnizer">
+        function <span class="apidocSignatureSpan"></span>gulp-cdnizer
+        <span class="apidocSignatureSpan">(opts)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">gulp-cdnizer = function (opts) {
+	"use strict";
+	
+	var cdnizerHandler = cdnizer(opts);
+
+
+	//noinspection JSUnusedLocalSymbols
+	function cdnizerStream(file, enc, callback) {
+
+		// Do nothing if no contents
+		if(file.isNull()) {
+			this.push(file);
+			return callback();
+		}
+
+		if(file.isStream()) {
+			this.emit("error", pluginError("Stream content is not supported"));
+			return callback();
+		}
+
+		// check if file.contents is a `Buffer`
+		if(file.isBuffer()) {
+			try {
+				file.contents = new Buffer(cdnizerHandler(String(file.contents)));
+				this.push(file);
+			} catch(error) {
+				this.emit("error", pluginError(error.toString()))
+			}
+		}
+		return callback();
+	}
+
+	return through.obj(cdnizerStream);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
