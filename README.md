@@ -1,9 +1,14 @@
-# api documentation for  [gulp-cdnizer (v1.1.7)](https://github.com/OverZealous/gulp-cdnizer)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cdnizer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cdnizer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer)
+# npmdoc-gulp-cdnizer
+
+#### api documentation for  [gulp-cdnizer (v1.1.7)](https://github.com/OverZealous/gulp-cdnizer)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cdnizer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cdnizer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer)
+
 #### A gulp plugin for replacing local links with CDN links, includes fallbacks and customization
 
-[![NPM](https://nodei.co/npm/gulp-cdnizer.png?downloads=true)](https://www.npmjs.com/package/gulp-cdnizer)
+[![NPM](https://nodei.co/npm/gulp-cdnizer.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/gulp-cdnizer)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-gulp-cdnizer_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-gulp-cdnizer/build/screenCapture.npmPackageListing.svg)
 
@@ -56,13 +61,11 @@
     "main": "./index.js",
     "maintainers": [
         {
-            "name": "overzealous",
-            "email": "phil@overzealous.com"
+            "name": "overzealous"
         }
     ],
     "name": "gulp-cdnizer",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/OverZealous/gulp-cdnizer.git"
@@ -74,16 +77,6 @@
     "version": "1.1.7"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module gulp-cdnizer](#apidoc.module.gulp-cdnizer)
-
-
-
-# <a name="apidoc.module.gulp-cdnizer"></a>[module gulp-cdnizer](#apidoc.module.gulp-cdnizer)
 
 
 
