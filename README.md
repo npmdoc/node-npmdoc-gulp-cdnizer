@@ -1,6 +1,6 @@
 # npmdoc-gulp-cdnizer
 
-#### api documentation for  [gulp-cdnizer (v1.1.7)](https://github.com/OverZealous/gulp-cdnizer)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cdnizer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cdnizer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer)
+#### basic api documentation for  [gulp-cdnizer (v1.1.7)](https://github.com/OverZealous/gulp-cdnizer)  [![npm package](https://img.shields.io/npm/v/npmdoc-gulp-cdnizer.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-gulp-cdnizer) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer.svg)](https://travis-ci.org/npmdoc/node-npmdoc-gulp-cdnizer)
 
 #### A gulp plugin for replacing local links with CDN links, includes fallbacks and customization
 
@@ -74,7 +74,8 @@
         "coveralls": "istanbul cover ./node_modules/mocha/bin/_mocha --report lcovonly -- -R spec && cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js && rm -rf ./coverage",
         "test": "istanbul test _mocha --report html -- test/*.js --reporter spec"
     },
-    "version": "1.1.7"
+    "version": "1.1.7",
+    "bin": {}
 }
 ```
 
